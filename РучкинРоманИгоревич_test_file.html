@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ручкин Роман ИСП-22-2</title>
+    <title>ГђГіГ·ГЄГЁГ­ ГђГ®Г¬Г Г­ Г€Г‘ГЏ-22-2</title>
     <style>
         body {
             display: flex;
@@ -11,20 +11,24 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            background-color: #f0f0f0; /* Светлый фон */
+            background-color: #f0f0f0; /* Г‘ГўГҐГІГ«Г»Г© ГґГ®Г­ */
+              font-size: 3em; /* ГђГ Г§Г¬ГҐГ° ГІГҐГЄГ±ГІГ  */
+            font-weight: bold; /* Г†ГЁГ°Г­Г»Г© ГІГҐГЄГ±ГІ */
+            text-align: center;
+            transition: color 1s ease-in-out; /* ГЏГ«Г ГўГ­Г Гї Г±Г¬ГҐГ­Г  Г¶ГўГҐГІГ  */
         }
 
         .changing-text {
-            font-size: 3em; /* Размер текста */
-            font-weight: bold; /* Жирный текст */
+            font-size: 3em; /* ГђГ Г§Г¬ГҐГ° ГІГҐГЄГ±ГІГ  */
+            font-weight: bold; /* Г†ГЁГ°Г­Г»Г© ГІГҐГЄГ±ГІ */
             text-align: center;
-            transition: color 1s ease-in-out; /* Плавная смена цвета */
+            transition: color 1s ease-in-out; /* ГЏГ«Г ГўГ­Г Гї Г±Г¬ГҐГ­Г  Г¶ГўГҐГІГ  */
         }
     </style>
 </head>
 <body>
 
-    <div class="changing-text" id="myText">Ручкин Роман ИСП-22-2</div>
+    <div class="changing-text" id="myText">ГђГіГ·ГЄГЁГ­ ГђГ®Г¬Г Г­ Г€Г‘ГЏ-22-2</div>
 
     <script>
         const textElement = document.getElementById('myText');
@@ -38,7 +42,7 @@
             colorIndex = (colorIndex + 1) % colors.length;
         }
 
-        setInterval(changeColor, 2000); // Вызываем функцию changeColor каждые 2 секунды
+        setInterval(changeColor, 2000); // Г‚Г»Г§Г»ГўГ ГҐГ¬ ГґГіГ­ГЄГ¶ГЁГѕ changeColor ГЄГ Г¦Г¤Г»ГҐ 2 Г±ГҐГЄГіГ­Г¤Г»
     </script>
 
 </body>
