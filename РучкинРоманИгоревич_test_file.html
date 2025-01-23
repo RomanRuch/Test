@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ручкин Роман ИСП-22-2</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; /* Светлый фон */
+        }
+
+        .changing-text {
+            font-size: 3em; /* Размер текста */
+            font-weight: bold; /* Жирный текст */
+            text-align: center;
+            transition: color 1s ease-in-out; /* Плавная смена цвета */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="changing-text" id="myText">Ручкин Роман ИСП-22-2</div>
+
+    <script>
+        const textElement = document.getElementById('myText');
+        const colors = [
+            'red', 'green', 'blue', 'purple', 'orange', 'teal'
+        ];
+        let colorIndex = 0;
+
+        function changeColor() {
+            textElement.style.color = colors[colorIndex];
+            colorIndex = (colorIndex + 1) % colors.length;
+        }
+
+        setInterval(changeColor, 2000); // Вызываем функцию changeColor каждые 2 секунды
+    </script>
+
+</body>
+</html>
